@@ -1,6 +1,6 @@
 # Tic-Tac-Toe
 
-The Tic Tac Toe app is a simple, yet addictive game that is perfect for players of all ages. As a new Android developer's first project, this app aims to showcase the developer's skills and creativity while providing a fun and engaging experience for users.
+The Tic Tac Toe app is a simple, yet addictive game that is perfect for players of all ages. As a new Android developer's first project, this app aims to showcase my skills and creativity while providing a fun and engaging experience for users.
 
 Snapshot from the app:
 
