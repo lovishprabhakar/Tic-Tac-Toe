@@ -4,4 +4,5 @@ The Tic Tac Toe app is a simple, yet addictive game that is perfect for players 
 
 Snapshot from the app:
 
-![work-3](https://github.com/lovishprabhakar/Tic-Tac-Toe/assets/89595539/41152ab1-0fea-4ac5-a592-d5ad1a3ead23)
+
+![tictacss-475x1024](https://github.com/lovishprabhakar/Tic-Tac-Toe/assets/89595539/c41f58c2-217b-4c4e-8744-27327c55e926)
