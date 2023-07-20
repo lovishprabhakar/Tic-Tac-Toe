@@ -1,31 +1,23 @@
 package com.lovishprabhakar.tictactoe;
 
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-
 import com.lovishprabhakar.tictactoe.databinding.ActivityMainBinding;
-
 import java.util.ArrayList;
 import java.util.List;
-
 public class MainActivity extends AppCompatActivity {
-
     ActivityMainBinding binding;
     private final List<int[]> combinationList = new ArrayList<>();
     private int[] boxPositions = {0,0,0,0,0,0,0,0,0}; //9 zero
     private int playerTurn = 1;
     private int totalSelectedBoxes = 1;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
         combinationList.add(new int[] {0,1,2});
         combinationList.add(new int[] {3,4,5});
         combinationList.add(new int[] {6,7,8});
@@ -34,13 +26,10 @@ public class MainActivity extends AppCompatActivity {
         combinationList.add(new int[] {2,5,8});
         combinationList.add(new int[] {2,4,6});
         combinationList.add(new int[] {0,4,8});
-
         String getPlayerOneName = getIntent().getStringExtra("playerOne");
         String getPlayerTwoName = getIntent().getStringExtra("playerTwo");
-
         binding.playerOneName.setText(getPlayerOneName);
         binding.playerTwoName.setText(getPlayerTwoName);
-
         binding.image1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -49,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
         binding.image2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -114,12 +102,9 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
     }
-
     private void performAction(ImageView  imageView, int selectedBoxPosition) {
         boxPositions[selectedBoxPosition] = playerTurn;
-
         if (playerTurn == 1) {
             imageView.setImageResource(R.drawable.ximage);
             if (checkResults()) {
@@ -152,7 +137,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
-
     private void changePlayerTurn(int currentPlayerTurn) {
         playerTurn = currentPlayerTurn;
         if (playerTurn == 1) {
@@ -163,12 +147,10 @@ public class MainActivity extends AppCompatActivity {
             binding.playerOneLayout.setBackgroundResource(R.drawable.white_box);
         }
     }
-
     private boolean checkResults(){
         boolean response = false;
         for (int i = 0; i < combinationList.size(); i++){
             final int[] combination = combinationList.get(i);
-
             if (boxPositions[combination[0]] == playerTurn && boxPositions[combination[1]] == playerTurn &&
                     boxPositions[combination[2]] == playerTurn) {
                 response = true;
@@ -176,7 +158,6 @@ public class MainActivity extends AppCompatActivity {
         }
         return response;
     }
-
     private boolean isBoxSelectable(int boxPosition) {
         boolean response = false;
         if (boxPositions[boxPosition] == 0) {
@@ -184,12 +165,10 @@ public class MainActivity extends AppCompatActivity {
         }
         return response;
     }
-
     public void restartMatch(){
         boxPositions = new int[] {0,0,0,0,0,0,0,0,0}; //9 zero
         playerTurn = 1;
         totalSelectedBoxes = 1;
-
         binding.image1.setImageResource(R.drawable.white_box);
         binding.image2.setImageResource(R.drawable.white_box);
         binding.image3.setImageResource(R.drawable.white_box);
