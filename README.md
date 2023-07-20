@@ -10,6 +10,6 @@ Snapshot from the app:
 <img src="./img/playscreen.png" width="45%"/>
 </p>
 <p allign="center">
-<img src="./img/winscreen.png" width="45%"/>
-<img src="./img/drawscreen.png" width="45%"/>
+<img src="./img/winscreen.png" width="45%" />
+<img src="./img/drawscreen.png" width="45%" />
 </p>
