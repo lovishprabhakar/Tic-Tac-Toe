@@ -1,6 +1,3 @@
 <resources>
     <string name="app_name">TicTacToe</string>
-    <string name="heading">Tic-Tac-Toe</string>
-    <string name="main_grid">Main Grid</string>
-    <string name="status">X\'s Turn - Tap to play</string>
 </resources>
