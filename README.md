@@ -14,3 +14,7 @@ The Tic Tac Toe app is a simple, yet addictive game that is perfect for players 
 <img src="./img/winscreen.png" width="45%" />
 <img src="./img/drawscreen.png" width="45%" />
 </p>
+
+## How to use
+- If you just want to install and enjoy the game, simply download `TicTacToe.apk` from the `apk` folder in the root delivery. Install the game on your mobile phone and have fun!
+- If you want to use this project or add to it, clone this repository and simply open the project in your Android Studio.
