@@ -5,4 +5,11 @@ The Tic Tac Toe app is a simple, yet addictive game that is perfect for players 
 Snapshot from the app:
 
 
-![tictacss-475x1024](https://github.com/lovishprabhakar/Tic-Tac-Toe/assets/89595539/c41f58c2-217b-4c4e-8744-27327c55e926)
+<p allign="center">
+<img src="./img/addplayerscreen.png" width="45%"/>
+<img src="./img/playscreen.png" width="45%"/>
+</p>
+<p allign="center">
+<img src="./img/winscreen.png" width="45%"/>
+<img src="./img/drawscreen.png" width="45%"/>
+</p>
